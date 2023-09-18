@@ -1,0 +1,23 @@
+/* Write your code here. */
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #9796f0;
+  color: #ffffff;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}

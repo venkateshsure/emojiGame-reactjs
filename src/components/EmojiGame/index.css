@@ -1,0 +1,23 @@
+/* Write your code here. */
+
+.ul-con {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#9796f0, #fbc7d4);
+}
+
+.con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-con {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

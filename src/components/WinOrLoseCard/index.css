@@ -1,0 +1,48 @@
+/* Write your code here. */
+
+.button {
+  background-color: #ffce27;
+  padding: 5px;
+  border: 1px solid #ffffff30;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fourth-con {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff30;
+}
+.third-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100vh;
+}
+
+.image-loss {
+  width: 300px;
+}
+
+.image-win {
+  width: 400px;
+}
