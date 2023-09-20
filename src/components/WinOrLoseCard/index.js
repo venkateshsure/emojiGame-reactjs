@@ -10,7 +10,7 @@ const WinOrLoseCard = props => {
 
   return (
     <div className="first-con">
-      {score > 11 ? (
+      {score === 12 ? (
         <div className="fourth-con">
           <div className="sec-con">
             <h1>You Won</h1>
