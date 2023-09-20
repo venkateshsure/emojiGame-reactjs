@@ -47,17 +47,13 @@ class EmojiGame extends Component {
   } */
 
   emojiChanged = id => {
-    // const {emojisList} = this.props
     const {initialEmojiId} = this.state
     const shuffledEmojis = this.shuffledEmojisList()
     const emojiIncludes = initialEmojiId.includes(id)
-    // console.log(shuffledEmojis.length)
-    // console.log(initialEmojiId)
+
     if (emojiIncludes) {
-      // console.log('loss')
       this.gameOver()
     } else {
-      // console.log('won')
       if (shuffledEmojis.length - 1 === initialEmojiId.length) {
         this.gameOver()
       }
