@@ -50,19 +50,19 @@ class EmojiGame extends Component {
     const {initialEmojiId} = this.state
     const shuffledEmojis = this.shuffledEmojisList()
     const emojiIncludes = initialEmojiId.includes(id)
+    // console.log(shuffledEmojis)
+    console.log(initialEmojiId)
 
     if (emojiIncludes) {
       this.gameOver()
-    } else {
-      if (shuffledEmojis.length - 1 === initialEmojiId.length) {
-        this.gameOver()
-      }
-      this.setState(pre => ({
-        emojiList: shuffledEmojis,
-        initialEmojiId: [...pre.initialEmojiId, id],
-        score: pre.score + 1,
-      }))
     }
+    if (shuffledEmojis.length - 1 === initialEmojiId.length) {
+      this.gameOver()
+    }
+    this.setState(pre => ({
+      initialEmojiId: [...pre.initialEmojiId, id],
+      score: pre.score + 1,
+    }))
   }
 
   gameOver = () => this.setState({isCard: false})
@@ -84,7 +84,6 @@ class EmojiGame extends Component {
 
   render() {
     const {emojiList, score, total, isCard} = this.state
-    console.log(emojiList)
 
     return (
       <div className="con">

@@ -19,9 +19,7 @@ const NavBar = props => {
           <p>Score: {score}</p>
           <p>Top Score: {total}</p>
         </div>
-      ) : (
-        ''
-      )}
+      ) : null}
     </div>
   )
 }
